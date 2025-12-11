@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub | Pago</title>
+    <link rel="icon" href="img/Logotipos/Isotipo.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a0000 50%, #0a0a0a 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .payment-container {
+            background: linear-gradient(145deg, #1a0000 0%, #000000 100%);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            border: 1px solid rgba(255, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #ff0000;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .order-summary {
+            background: rgba(255, 0, 0, 0.15);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 0, 0, 0.3);
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+
+        .summary-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .summary-label {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .summary-value {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.15);
+            margin: 15px 0;
+        }
+
+        .total-row {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .total-row .summary-value {
+            color: #ff0000;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(0, 255, 100, 0.4);
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .card-details {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .card-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .card-col {
+            flex: 1;
+        }
+
+        .btn-pay {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            border: 1px solid rgba(0, 255, 100, 0.2);
+            border-radius: 12px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-pay:hover {
+            background: linear-gradient(135deg, #ff3333 0%, #ff0000 100%);
+            border-color: rgba(0, 255, 100, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .btn-pay:active {
+            transform: translateY(0);
+        }
+
+        .security-note {
+            text-align: center;
+            color: rgba(0, 255, 100, 0.6);
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        .lock-icon {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="payment-container">
+        <h1>Completar Pago</h1>
+        <p class="subtitle">Método de pago seguro</p>
+
+
+
+        <form>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="tu@email.com" required>
+            </div>
+
+            <div class="card-details">
+                <div class="form-group">
+                    <label>Número de Tarjeta</label>
+                    <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Nombre en la Tarjeta</label>
+                    <input type="text" placeholder="JOHN DOE" required>
+                </div>
+
+                <div class="card-row">
+                    <div class="card-col">
+                        <label>Fecha de Expiración</label>
+                        <input type="text" placeholder="MM/AA" maxlength="5" required>
+                    </div>
+                    <div class="card-col">
+                        <label>CVV</label>
+                        <input type="text" placeholder="123" maxlength="3" required>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-pay" onclick="location.href='confirma-compra.html'">
+                Confirmar Pago
+            </button>
+
+            <p class="security-note">
+                <span class="lock-icon">🔒</span>
+                Pago encriptado y seguro
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

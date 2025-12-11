@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub | Comunidad</title>
+    <link rel="icon" href="img/Logotipos/Isotipo.jpg">
+    <link rel="stylesheet" href="css/comunidad.css">
+    <link rel="stylesheet" href="css/comunidad-content.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- TOPBAR -->
+        <header class="topbar">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span>GameHub</span>
+            </div>
+            <div class="search-container">
+                <div class="search-icon"></div>
+                <input type="text" class="search-bar" placeholder="Search">
+            </div>
+            <div class="user-section">
+                <div class="notification-section">
+                    <div class="icon-btn">
+                        <div class="notification-badge"></div>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar"></div>
+                    <span class="username">Mancin</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li onclick="location.href='index.html'">
+                    <span>Inicio</span>
+                </li>
+                <li onclick="location.href='productos.html'">
+                    <span>Productos</span>
+                </li>
+                <li class="active">
+                    <span>Comunidad</span>
+                </li>
+                <li onclick="location.href='Herramientas.html'">
+                    <span>Herramientas</span>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <ul>
+                    <li onclick="location.href='soporte.html'">
+                        <span>Soporte</span>
+                    </li>
+                    <li onclick="location.href='nosotros.html'">
+                        <span>Nosotros</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL - COMUNIDAD -->
+        <main class="main-content">
+            <div class="community-container">
+
+                <!-- Hero Section -->
+                <section class="community-hero">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">Únete a la Comunidad</h1>
+                        <p class="hero-subtitle">Comparte experiencias, descubre contenido y conecta con jugadores de
+                            todo el mundo</p>
+                    </div>
+                </section>
+
+                <!-- Tabs de navegación -->
+                <nav class="community-tabs">
+                    <button class="tab-btn active" data-tab="posts">Publicaciones</button>
+                    <button class="tab-btn" data-tab="guides">Guías</button>
+                    <button class="tab-btn" data-tab="events">Eventos</button>
+                    <button class="tab-btn" data-tab="forums">Foros</button>
+                </nav>
+
+                <!-- Contenedor de contenido con tabs -->
+                <div class="community-content">
+
+                    <!-- TAB: PUBLICACIONES -->
+                    <div class="tab-content active" id="posts-tab">
+                        <div class="posts-grid">
+
+                            <!-- Post 1 -->
+                            <article class="post-card">
+                                <div class="post-header">
+                                    <div class="post-author">
+                                        <div class="author-avatar" style="background-image: url('../img/Iconos/Perfil2.jpeg');
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;"></div>
+                                        <div class="author-info">
+                                            <span class="author-name">ShadowGamer</span>
+                                            <span class="post-time">Hace 2 horas</span>
+                                        </div>
+                                    </div>
+                                    <button class="post-menu">⋮</button>
+                                </div>
+                                <div class="post-body">
+                                    <p class="post-text">¡Acabo de completar Hollow Knight al 112%! Qué experiencia tan
+                                        increíble. El combate contra el Radiance fue épico. ¿Alguien más lo ha
+                                        completado?</p>
+                                    <div class="post-image"
+                                        style="background-image: url('../img/HollowKnight/Muestra1.jpg');"></div>
+                                </div>
+                                <div class="post-footer">
+                                    <button class="post-action">
+                                        <span class="action-icon">❤️</span>
+                                        <span class="action-count">247</span>
+                                    </button>
+                                    <button class="post-action">
+                                        <span class="action-icon">💬</span>
+                                        <span class="action-count">34</span>
+                                    </button>
+                                    <button class="post-action">
+                                        <span class="action-icon">🔄</span>
+                                        <span class="action-count">12</span>
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Post 2 -->
+                            <article class="post-card">
+                                <div class="post-header">
+                                    <div class="post-author">
+                                        <div class="author-avatar"
+                                            style="background-image: url('../img/Iconos/Perfil4.jpeg');
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;"></div>
+                                        <div class="author-info">
+                                            <span class="author-name">PixelMaster</span>
+                                            <span class="post-time">Hace 5 horas</span>
+                                        </div>
+                                    </div>
+                                    <button class="post-menu">⋮</button>
+                                </div>
+                                <div class="post-body">
+                                    <p class="post-text">Mi construcción en Minecraft después de 3 meses de trabajo.
+                                        ¡Una ciudad completa con sistema de redstone! 🏰</p>
+                                    <div class="post-image"
+                                        style="background-image: url('../img/Minecraft/Muestra3.webp');"></div>
+                                </div>
+                                <div class="post-footer">
+                                    <button class="post-action">
+                                        <span class="action-icon">❤️</span>
+                                        <span class="action-count">892</span>
+                                    </button>
+                                    <button class="post-action">
+                                        <span class="action-icon">💬</span>
+                                        <span class="action-count">156</span>
+                                    </button>
+                                    <button class="post-action">
+                                        <span class="action-icon">🔄</span>
+                                        <span class="action-count">78</span>
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Post 3 -->
+                            <article class="post-card">
+                                <div class="post-header">
+                                    <div class="post-author">
+                                        <div class="author-avatar"
+                                            style="background-image: url('../img/Iconos/Perfil3.jpg');
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;">
+                                        </div>
+                                        <div class="author-info">
+                                            <span class="author-name">CyberCat</span>
+                                            <span class="post-time">Hace 8 horas</span>
+                                        </div>
+                                    </div>
+                                    <button class="post-menu">⋮</button>
+                                </div>
+                                <div class="post-body">
+                                    <p class="post-text">Stray es simplemente hermoso. La ambientación cyberpunk y la
+                                        jugabilidad como gato es única. ¿Recomendaciones similares?</p>
+                                    <div class="post-image"
+                                        style="background-image: url('../img/Stray/Muestra2.jpeg');"></div>
+                                </div>
+                                <div class="post-footer">
+                                    <button class="post-action">
+                                        <span class="action-icon">❤️</span>
+                                        <span class="action-count">534</span>
+                                    </button>
+                                    <button class="post-action">
+                                        <span class="action-icon">💬</span>
+                                        <span class="action-count">89</span>
+                                    </button>
+                                    <button class="post-action">
+                                        <span class="action-icon">🔄</span>
+                                        <span class="action-count">45</span>
+                                    </button>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+
+                    <!-- TAB: GUÍAS -->
+                    <div class="tab-content" id="guides-tab">
+                        <div class="guides-grid">
+
+                            <article class="guide-card">
+                                <div class="guide-image"
+                                    style="background-image: url('../img/HollowKnight/Muestra4.jpg');"></div>
+                                <div class="guide-content">
+                                    <span class="guide-category">Tutorial</span>
+                                    <h3 class="guide-title">Guía completa: Todos los finales de Hollow Knight</h3>
+                                    <p class="guide-description">Descubre cómo desbloquear todos los finales secretos y
+                                        enfrentarte a los jefes más difíciles del juego.</p>
+                                    <div class="guide-meta">
+                                        <span class="guide-author">Por DarkKnight</span>
+                                        <span class="guide-views">👁️ 15.2K vistas</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="guide-card">
+                                <div class="guide-image"
+                                    style="background-image: url('../img/Minecraft/Muestra1.jpeg');"></div>
+                                <div class="guide-content">
+                                    <span class="guide-category">Construcción</span>
+                                    <h3 class="guide-title">Sistemas de Redstone avanzados para principiantes</h3>
+                                    <p class="guide-description">Aprende a crear granjas automáticas, puertas secretas y
+                                        mecanismos complejos paso a paso.</p>
+                                    <div class="guide-meta">
+                                        <span class="guide-author">Por RedstoneGuru</span>
+                                        <span class="guide-views">👁️ 28.5K vistas</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="guide-card">
+                                <div class="guide-image" style="background-image: url('../img/Stray/Muestra3.jpeg');">
+                                </div>
+                                <div class="guide-content">
+                                    <span class="guide-category">Coleccionables</span>
+                                    <h3 class="guide-title">Stray: Ubicación de todas las insignias</h3>
+                                    <p class="guide-description">Encuentra las 6 insignias ocultas en el mundo cyberpunk
+                                        de Stray con esta guía visual completa.</p>
+                                    <div class="guide-meta">
+                                        <span class="guide-author">Por CatExplorer</span>
+                                        <span class="guide-views">👁️ 9.8K vistas</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+
+                    <!-- TAB: EVENTOS -->
+                    <div class="tab-content" id="events-tab">
+                        <div class="events-grid">
+
+                            <article class="event-card">
+                                <div class="event-date">
+                                    <span class="event-day">15</span>
+                                    <span class="event-month">DIC</span>
+                                </div>
+                                <div class="event-info">
+                                    <span class="event-badge live">EN VIVO</span>
+                                    <h3 class="event-title">Torneo de Speedrun - Hollow Knight</h3>
+                                    <p class="event-description">Únete a la competencia más emocionante del año. Premios
+                                        de hasta $5,000 USD.</p>
+                                    <div class="event-footer">
+                                        <span class="event-participants">👥 1,234 participantes</span>
+                                        <button class="event-btn">Unirse</button>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="event-card">
+                                <div class="event-date">
+                                    <span class="event-day">20</span>
+                                    <span class="event-month">DIC</span>
+                                </div>
+                                <div class="event-info">
+                                    <span class="event-badge upcoming">PRÓXIMAMENTE</span>
+                                    <h3 class="event-title">Construcción Comunitaria - Minecraft</h3>
+                                    <p class="event-description">Construyamos juntos la ciudad más grande de GameHub.
+                                        Servidor dedicado disponible.</p>
+                                    <div class="event-footer">
+                                        <span class="event-participants">👥 567 interesados</span>
+                                        <button class="event-btn">Registrarse</button>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="event-card">
+                                <div class="event-date">
+                                    <span class="event-day">25</span>
+                                    <span class="event-month">DIC</span>
+                                </div>
+                                <div class="event-info">
+                                    <span class="event-badge upcoming">PRÓXIMAMENTE</span>
+                                    <h3 class="event-title">Maratón de Stray - Recaudación Benéfica</h3>
+                                    <p class="event-description">Stream de 24 horas apoyando refugios de animales. ¡Dona
+                                        y gana premios exclusivos!</p>
+                                    <div class="event-footer">
+                                        <span class="event-participants">👥 892 interesados</span>
+                                        <button class="event-btn">Más info</button>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+
+                    <!-- TAB: FOROS -->
+                    <div class="tab-content" id="forums-tab">
+                        <div class="forums-list">
+
+                            <article class="forum-thread">
+                                <div class="thread-icon">💬</div>
+                                <div class="thread-content">
+                                    <h3 class="thread-title">¿Cuál es el mejor juego indie de 2024?</h3>
+                                    <p class="thread-meta">Iniciado por <span class="thread-author">GameMaster</span> •
+                                        <span class="thread-time">Hace 1 día</span>
+                                    </p>
+                                </div>
+                                <div class="thread-stats">
+                                    <span class="thread-replies">234 respuestas</span>
+                                    <span class="thread-views">2.1K vistas</span>
+                                </div>
+                            </article>
+
+                            <article class="forum-thread">
+                                <div class="thread-icon">🎮</div>
+                                <div class="thread-content">
+                                    <h3 class="thread-title">Tips para nuevos jugadores de Hollow Knight</h3>
+                                    <p class="thread-meta">Iniciado por <span class="thread-author">VoidHunter</span> •
+                                        <span class="thread-time">Hace 3 días</span>
+                                    </p>
+                                </div>
+                                <div class="thread-stats">
+                                    <span class="thread-replies">89 respuestas</span>
+                                    <span class="thread-views">1.5K vistas</span>
+                                </div>
+                            </article>
+
+                            <article class="forum-thread">
+                                <div class="thread-icon">🏗️</div>
+                                <div class="thread-content">
+                                    <h3 class="thread-title">Comparte tus mejores construcciones de Minecraft</h3>
+                                    <p class="thread-meta">Iniciado por <span class="thread-author">BuilderPro</span> •
+                                        <span class="thread-time">Hace 5 días</span>
+                                    </p>
+                                </div>
+                                <div class="thread-stats">
+                                    <span class="thread-replies">456 respuestas</span>
+                                    <span class="thread-views">5.8K vistas</span>
+                                </div>
+                            </article>
+
+                            <article class="forum-thread">
+                                <div class="thread-icon">🐱</div>
+                                <div class="thread-content">
+                                    <h3 class="thread-title">Easter eggs ocultos en Stray</h3>
+                                    <p class="thread-meta">Iniciado por <span class="thread-author">CatDetective</span>
+                                        • <span class="thread-time">Hace 1 semana</span></p>
+                                </div>
+                                <div class="thread-stats">
+                                    <span class="thread-replies">167 respuestas</span>
+                                    <span class="thread-views">3.2K vistas</span>
+                                </div>
+                            </article>
+
+                            <article class="forum-thread">
+                                <div class="thread-icon">⚔️</div>
+                                <div class="thread-content">
+                                    <h3 class="thread-title">Debate: ¿Cuál es el jefe más difícil en juegos indie?</h3>
+                                    <p class="thread-meta">Iniciado por <span class="thread-author">BossFighter</span> •
+                                        <span class="thread-time">Hace 2 semanas</span>
+                                    </p>
+                                </div>
+                                <div class="thread-stats">
+                                    <span class="thread-replies">678 respuestas</span>
+                                    <span class="thread-views">8.9K vistas</span>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="gh-footer" role="contentinfo">
+                <div class="gh-footer-inner">
+                    <div class="gh-footer-brand">
+                        <img src="img/Logotipos/IsotipoGlass.png" alt="GameHub" class="gh-footer-logo">
+                        <div class="gh-footer-title">
+                            <span class="gh-site-name">GameHub</span>
+                            <small class="gh-tagline">Tu centro de juegos</small>
+                        </div>
+                    </div>
+
+                    <nav class="gh-footer-social" aria-label="Enlaces a redes sociales">
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+                            class="gh-social-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M22 5.92c-.66.29-1.37.49-2.11.58.76-.45 1.34-1.17 1.61-2.03-.71.42-1.5.72-2.34.89A3.64 3.64 0 0 0 16.15 4c-2.02 0-3.66 1.64-3.66 3.66 0 .29.03.57.1.84C9.58 8.35 6.7 6.6 4.86 3.9c-.32.55-.5 1.18-.5 1.85 0 1.28.65 2.41 1.64 3.07-.6-.02-1.17-.18-1.66-.46v.05c0 1.79 1.27 3.28 2.95 3.62-.31.08-.63.12-.97.12-.24 0-.48-.02-.71-.07.48 1.48 1.88 2.56 3.53 2.59A7.32 7.32 0 0 1 2 19.14 10.32 10.32 0 0 0 7.03 21c6.29 0 9.73-5.21 9.73-9.72v-.44c.67-.48 1.25-1.08 1.71-1.77-.62.28-1.28.47-1.96.56z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram" class="gh-social-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A4.8 4.8 0 1 0 16.8 13 4.8 4.8 0 0 0 12 8.2zm6.4-3.1a1.12 1.12 0 1 0 1.12 1.12A1.12 1.12 0 0 0 18.4 5.1zM12 10.6A1.4 1.4 0 1 1 10.6 12 1.4 1.4 0 0 1 12 10.6z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube" class="gh-social-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M23 7.2s-.2-1.6-.8-2.3c-.8-.9-1.7-.9-2.1-1C16.6 3.6 12 3.6 12 3.6s-4.6 0-7.9.3c-.4 0-1.3 0-2.1 1C1.2 5.6 1 7.2 1 7.2S.9 9 .9 10.8v2.4C.9 15 1 16.8 1 16.8s.2 1.6.8 2.3c.8.9 1.8.9 2.3 1 1.7.2 7.1.3 7.1.3s4.6 0 7.9-.3c.4 0 1.3 0 2.1-1 .6-.7.8-2.3.8-2.3s.1-1.9.1-3.6v-2.4C23.1 9 23 7.2 23 7.2zM9.8 15.6V8.4l6.3 3.6-6.3 3.6z" />
+                            </svg>
+                        </a>
+                        <a href="https://discord.com/" target="_blank" rel="noopener noreferrer" aria-label="Discord"
+                            class="gh-social-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M20.317 4.369A19.791 19.791 0 0 0 16.795 3c-.17.29-.362.665-.497.96-1.53-.23-3.047-.23-4.57 0-.135-.297-.327-.67-.497-.96A19.736 19.736 0 0 0 3.683 4.37C1.52 9.11.856 13.66 1.5 18.09 4.06 19.9 6.542 20.6 9.06 20.98c.23-.31.44-.63.63-.97-1.88-.56-3.64-1.46-5.06-2.66 0 0 .43-.27.81-.5 1.61.7 3.29 1.12 4.96 1.36.55-.74 1.02-1.53 1.39-2.33 0 0 2.88 2.1 7.9 2.1.64 0 1.28-.03 1.91-.08.67-.06 1.34-.14 2-.24.6-4.46-.5-8.99-2.77-13.52zM8.02 13.5c-.97 0-1.77-.87-1.77-1.94 0-1.08.78-1.95 1.77-1.95.99 0 1.79.88 1.77 1.95 0 1.07-.78 1.94-1.77 1.94zm7.96 0c-.97 0-1.77-.87-1.77-1.94 0-1.08.78-1.95 1.77-1.95.99 0 1.79.88 1.77 1.95 0 1.07-.78 1.94-1.77 1.94z" />
+                            </svg>
+                        </a>
+                    </nav>
+
+                    <div class="gh-footer-rights">
+                        <small>© <span id="ghFooterYear"></span> <span id="ghFooterOwner">GameHub</span>. Todos los
+                            derechos reservados.</small>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Overlay de notificaciones -->
+    <div class="gh-notify-overlay-bg" id="ghNotifyOverlay"></div>
+
+    <!-- Panel de notificaciones -->
+    <div class="gh-notifications-drawer" id="ghNotifyDrawer">
+        <div class="gh-drawer-header">
+            <h2 class="gh-drawer-heading">Notificaciones</h2>
+            <button class="gh-close-drawer" id="ghCloseBtn">×</button>
+        </div>
+
+        <div class="gh-notify-scroll-area" id="ghNotifyList">
+            <div class="gh-notify-card gh-unread" data-gh-id="n1">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">¡Nuevo descuento disponible!</div>
+                    <div class="gh-notify-text">Un juego de tu lista de deseos acaba de recibir un 30% de descuento.
+                    </div>
+                    <div class="gh-notify-timestamp">Hace 5 minutos</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n1">×</button>
+            </div>
+
+            <div class="gh-notify-card" data-gh-id="n2">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">Nuevos títulos agregados</div>
+                    <div class="gh-notify-text">Se han añadido estrenos recientes a la tienda. ¡No te los pierdas!</div>
+                    <div class="gh-notify-timestamp">Hace 1 hora</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n2">×</button>
+            </div>
+
+            <div class="gh-notify-card gh-unread" data-gh-id="n3">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">¡Lanzamiento imperdible!</div>
+                    <div class="gh-notify-text">"GTA VI" ya está disponible para reserva. ¡Asegura tu copia ahora!</div>
+                    <div class="gh-notify-timestamp">Hace 2 horas</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n3">×</button>
+            </div>
+
+            <div class="gh-notify-card" data-gh-id="n4">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">Reporte semanal de jugador</div>
+                    <div class="gh-notify-text">Aquí tienes tus juegos más jugados y nuevas recomendaciones
+                        personalizadas.</div>
+                    <div class="gh-notify-timestamp">Hoy, 09:18 am</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n4">×</button>
+            </div>
+
+            <div class="gh-notify-card" data-gh-id="n5">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">Compra confirmada</div>
+                    <div class="gh-notify-text">Tu pedido de "Elden Ring II" fue procesado exitosamente.</div>
+                    <div class="gh-notify-timestamp">Ayer</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n5">×</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/comunidad-tabs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub | Principal</title>
+    <link rel="icon" href="img/Logotipos/Isotipo.jpg">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- TOPBAR -->
+        <header class="topbar">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span>GameHub</span>
+            </div>
+            <div class="search-container">
+                <div class="search-icon"></div>
+                <input type="text" class="search-bar" placeholder="Search">
+            </div>
+            <div class="user-section">
+                <div class="notification-section">
+                    <div class="icon-btn">
+                        <div class="notification-badge"></div>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar"></div>
+                    <span class="username">Mancin</span>
+                </div>
+            </div>
+        </header>
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li class="active">
+                    <span>Inicio</span>
+                </li>
+                <li onclick="location.href='productos.html'">
+                    <span>Productos</span>
+                </li>
+                <li onclick="location.href='comunidad.html'">
+                    <span>Comunidad</span>
+                </li>
+                <li onclick="location.href='herramientas.html'">
+                    <span>Herramientas</span>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <ul>
+                    <li onclick="location.href='soporte.html'">
+                        <span>Soporte</span>
+                    </li>
+                    <li onclick="location.href='nosotros.html'">
+                        <span>Nosotros</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- SEGUNDA PARTE: CONTENIDO -->
+        <main class="main-content">
+            <!-- FEATURED SECTION -->
+            <div class="featured-section">
+                <div class="carousel-wrapper">
+                    <div class="carousel-container">
+                        <div class="carousel-slides" id="carouselSlides">
+                            <section class="featured-banner slide-1">
+                                <div class="banner-bg"></div>
+                                <div class="banner-content">
+                                    <div class="categories">
+                                        <div class="category-chip">Adventure</div>
+                                        <div class="category-chip">Cyberpunk</div>
+                                        <div class="category-chip">Atmosphere</div>
+                                        <div class="category-chip">+</div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="featured-banner slide-2">
+                                <div class="banner-bg"></div>
+                                <div class="banner-content">
+                                    <div class="categories">
+                                        <div class="category-chip">Action</div>
+                                        <div class="category-chip">Sci-Fi</div>
+                                        <div class="category-chip">Story Rich</div>
+                                        <div class="category-chip">+</div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="featured-banner slide-3">
+                                <div class="banner-bg"></div>
+                                <div class="banner-content">
+                                    <div class="categories">
+                                        <div class="category-chip">Adventure</div>
+                                        <div class="category-chip">Indie</div>
+                                        <div class="category-chip">Metroidvania</div>
+                                        <div class="category-chip">+</div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <button class="carousel-arrow arrow-left" id="prevBtn">‹</button>
+                    <button class="carousel-arrow arrow-right" id="nextBtn">›</button>
+                </div>
+
+                <aside class="game-info-card fade-in" id="gameInfoCard">
+                    <h2 class="game-title-card" id="gameTitle">Stray</h2>
+                    <p class="game-description" id="gameDescription">
+                        Es una aventura cyberpunk donde controlas a un gato perdido que debe explorar una ciudad
+                        futurista, resolver misterios y encontrar el camino a casa. Ideal para quienes buscan una
+                        experiencia única e inmersiva.
+                    </p>
+                    <div class="price-section">
+                        <div class="price" id="gamePrice">$17.99 USD</div>
+                    </div>
+                    <button class="buy-button" onclick="location.href='datostarjeta.html'">
+                        <span>Comprar Ahora</span>
+                    </button>
+                    <div class="game-thumbnails" id="gameThumbnails">
+                        <div class="thumbnail" style="background-image: url('/img/Stray/Muestra1.jpeg')"></div>
+                        <div class="thumbnail" style="background-image: url('/img/Stray/Muestra2.jpeg')"></div>
+                        <div class="thumbnail" style="background-image: url('/img/Stray/Muestra3.jpeg')"></div>
+                        <div class="thumbnail" style="background-image: url('/img/Stray/Muestra4.jpeg')"></div>
+                    </div>
+                </aside>
+            </div>
+
+
+
+
+            <!-- SPECIAL OFFERS -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Ofertas Especiales</h2>
+                    <span class="see-more" onclick="location.href='productos.html'">Ver más →</span>
+                </div>
+                <div class="game-grid">
+                    <div class="game-card" onclick="location.href='datostarjeta.html'">
+                        <div class="game-card-image" id="card-1"></div>
+                        <div class="game-card-content">
+                            <h3 class="game-card-title">Hogwarts Legacy</h3>
+                            <div class="game-card-price">$49.99</div>
+                        </div>
+                    </div>
+                    <div class="game-card" onclick="location.href='datostarjeta.html'">
+                        <div class="game-card-image" id="card-2"></div>
+                        <div class="game-card-content">
+                            <h3 class="game-card-title">Call of Duty</h3>
+                            <div class="game-card-price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="game-card" onclick="location.href='datostarjeta.html'">
+                        <div class="game-card-image" id="card-3"></div>
+                        <div class="game-card-content">
+                            <h3 class="game-card-title">FIFA 23</h3>
+                            <div class="game-card-price">$39.99</div>
+                        </div>
+                    </div>
+                    <div class="game-card" onclick="location.href='datostarjeta.html'">
+                        <div class="game-card-image" id="card-4"></div>
+                        <div class="game-card-content">
+                            <h3 class="game-card-title">Mass Effect</h3>
+                            <div class="game-card-price">$29.99</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LEARN MORE -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Variados</h2>
+                    <span class="see-more" onclick="location.href='productos.html'">Ver más →</span>
+                </div>
+                <div class="game-grid">
+                    <div class="game-card" onclick="location.href='datostarjeta.html'">
+                        <div class="game-card-image" id="card-5"></div>
+                        <div class="game-card-content">
+                            <h3 class="game-card-title">Elden Ring</h3>
+                            <div class="game-card-price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="game-card" onclick="location.href='datostarjeta.html'">
+                        <div class="game-card-image" id="card-6"></div>
+                        <div class="game-card-content">
+                            <h3 class="game-card-title">God of War</h3>
+                            <div class="game-card-price">$69.99</div>
+                        </div>
+                    </div>
+                    <div class="game-card" onclick="location.href='datostarjeta.html'">
+                        <div class="game-card-image" id="card-7"></div>
+                        <div class="game-card-content">
+                            <h3 class="game-card-title">Cyberpunk 2077</h3>
+                            <div class="game-card-price">$49.99</div>
+                        </div>
+                    </div>
+                    <div class="game-card" onclick="location.href='datostarjeta.html'">
+                        <div class="game-card-image" id="card-8"></div>
+                        <div class="game-card-content">
+                            <h3 class="game-card-title">The Witcher 3</h3>
+                            <div class="game-card-price">$19.99</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <footer class="gh-footer" role="contentinfo">
+                <div class="gh-footer-inner">
+                    <div class="gh-footer-brand">
+                        <img src="img/Logotipos/IsotipoGlass.png" alt="GameHub" class="gh-footer-logo"
+                            id="ghFooterLogo">
+                        <div class="gh-footer-title">
+                            <span class="gh-site-name">GameHub</span>
+                            <small class="gh-tagline">Tu centro de juegos</small>
+                        </div>
+                    </div>
+
+                    <nav class="gh-footer-social" aria-label="Enlaces a redes sociales">
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+                            class="gh-social-link">
+                            <!-- Twitter / X -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M22 5.92c-.66.29-1.37.49-2.11.58.76-.45 1.34-1.17 1.61-2.03-.71.42-1.5.72-2.34.89A3.64 3.64 0 0 0 16.15 4c-2.02 0-3.66 1.64-3.66 3.66 0 .29.03.57.1.84C9.58 8.35 6.7 6.6 4.86 3.9c-.32.55-.5 1.18-.5 1.85 0 1.28.65 2.41 1.64 3.07-.6-.02-1.17-.18-1.66-.46v.05c0 1.79 1.27 3.28 2.95 3.62-.31.08-.63.12-.97.12-.24 0-.48-.02-.71-.07.48 1.48 1.88 2.56 3.53 2.59A7.32 7.32 0 0 1 2 19.14 10.32 10.32 0 0 0 7.03 21c6.29 0 9.73-5.21 9.73-9.72v-.44c.67-.48 1.25-1.08 1.71-1.77-.62.28-1.28.47-1.96.56z" />
+                            </svg>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram" class="gh-social-link">
+                            <!-- Instagram -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A4.8 4.8 0 1 0 16.8 13 4.8 4.8 0 0 0 12 8.2zm6.4-3.1a1.12 1.12 0 1 0 1.12 1.12A1.12 1.12 0 0 0 18.4 5.1zM12 10.6A1.4 1.4 0 1 1 10.6 12 1.4 1.4 0 0 1 12 10.6z" />
+                            </svg>
+                        </a>
+
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube" class="gh-social-link">
+                            <!-- YouTube -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M23 7.2s-.2-1.6-.8-2.3c-.8-.9-1.7-.9-2.1-1C16.6 3.6 12 3.6 12 3.6s-4.6 0-7.9.3c-.4 0-1.3 0-2.1 1C1.2 5.6 1 7.2 1 7.2S.9 9 .9 10.8v2.4C.9 15 1 16.8 1 16.8s.2 1.6.8 2.3c.8.9 1.8.9 2.3 1 1.7.2 7.1.3 7.1.3s4.6 0 7.9-.3c.4 0 1.3 0 2.1-1 .6-.7.8-2.3.8-2.3s.1-1.9.1-3.6v-2.4C23.1 9 23 7.2 23 7.2zM9.8 15.6V8.4l6.3 3.6-6.3 3.6z" />
+                            </svg>
+                        </a>
+
+                        <a href="https://discord.com/" target="_blank" rel="noopener noreferrer" aria-label="Discord"
+                            class="gh-social-link">
+                            <!-- Discord -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M20.317 4.369A19.791 19.791 0 0 0 16.795 3c-.17.29-.362.665-.497.96-1.53-.23-3.047-.23-4.57 0-.135-.297-.327-.67-.497-.96A19.736 19.736 0 0 0 3.683 4.37C1.52 9.11.856 13.66 1.5 18.09 4.06 19.9 6.542 20.6 9.06 20.98c.23-.31.44-.63.63-.97-1.88-.56-3.64-1.46-5.06-2.66 0 0 .43-.27.81-.5 1.61.7 3.29 1.12 4.96 1.36.55-.74 1.02-1.53 1.39-2.33 0 0 2.88 2.1 7.9 2.1.64 0 1.28-.03 1.91-.08.67-.06 1.34-.14 2-.24.6-4.46-.5-8.99-2.77-13.52zM8.02 13.5c-.97 0-1.77-.87-1.77-1.94 0-1.08.78-1.95 1.77-1.95.99 0 1.79.88 1.77 1.95 0 1.07-.78 1.94-1.77 1.94zm7.96 0c-.97 0-1.77-.87-1.77-1.94 0-1.08.78-1.95 1.77-1.95.99 0 1.79.88 1.77 1.95 0 1.07-.78 1.94-1.77 1.94z" />
+                            </svg>
+                        </a>
+                    </nav>
+
+                    <div class="gh-footer-rights">
+                        <small>© <span id="ghFooterYear"></span> <span id="ghFooterOwner">GameHub</span>. Todos los
+                            derechos
+                            reservados.</small>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+
+    </div>
+
+
+    <div class="gh-notify-overlay-bg" id="ghNotifyOverlay"></div>
+
+    <!-- Panel de notificaciones -->
+    <div class="gh-notifications-drawer" id="ghNotifyDrawer">
+        <div class="gh-drawer-header">
+            <h2 class="gh-drawer-heading">Notificaciones</h2>
+            <button class="gh-close-drawer" id="ghCloseBtn">×</button>
+        </div>
+
+        <div class="gh-notify-scroll-area" id="ghNotifyList">
+
+            <div class="gh-notify-card gh-unread" data-gh-id="n1">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">¡Nuevo descuento disponible!</div>
+                    <div class="gh-notify-text">Un juego de tu lista de deseos acaba de recibir un 30% de descuento.
+                    </div>
+                    <div class="gh-notify-timestamp">Hace 5 minutos</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n1">×</button>
+            </div>
+
+            <div class="gh-notify-card" data-gh-id="n2">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">Nuevos títulos agregados</div>
+                    <div class="gh-notify-text">Se han añadido estrenos recientes a la tienda. ¡No te los pierdas!</div>
+                    <div class="gh-notify-timestamp">Hace 1 hora</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n2">×</button>
+            </div>
+
+            <div class="gh-notify-card gh-unread" data-gh-id="n3">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">¡Lanzamiento imperdible!</div>
+                    <div class="gh-notify-text">"GTA VI" ya está disponible para reserva. ¡Asegura tu copia ahora!</div>
+                    <div class="gh-notify-timestamp">Hace 2 horas</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n3">×</button>
+            </div>
+
+            <div class="gh-notify-card" data-gh-id="n4">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">Reporte semanal de jugador</div>
+                    <div class="gh-notify-text">Aquí tienes tus juegos más jugados y nuevas recomendaciones
+                        personalizadas.</div>
+                    <div class="gh-notify-timestamp">Hoy, 09:18 am</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n4">×</button>
+            </div>
+
+            <div class="gh-notify-card" data-gh-id="n5">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">Compra confirmada</div>
+                    <div class="gh-notify-text">Tu pedido de "Elden Ring II" fue procesado exitosamente.</div>
+                    <div class="gh-notify-timestamp">Ayer</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n5">×</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="js/index.js"></script>
+<script src="js/script.js"></script>
+
+</html>

@@ -1,0 +1,457 @@
+/* ============================================
+   ESTILOS PARA HERRAMIENTAS
+   ============================================ */
+
+/* Fix para scroll */
+.main-content {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: calc(100vh - 80px) !important;
+}
+
+.tools-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+}
+
+/* ===== HEADER ===== */
+.tools-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tools-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tools-subtitle {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+/* ===== GRID DE HERRAMIENTAS ===== */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+}
+
+/* ===== CARDS DE HERRAMIENTAS ===== */
+.tool-card {
+    background: rgba(0, 0, 0, 0.192);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 28px;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== HEADER DE HERRAMIENTA ===== */
+.tool-header {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.tool-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.tool-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.tool-description {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* ===== BODY DE HERRAMIENTA ===== */
+.tool-body {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* ===== INPUTS ===== */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.tool-input,
+.tool-select {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.tool-input:focus,
+.tool-select:focus {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(102, 126, 234, 0.6);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.tool-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.tool-select option {
+    background: #1a1a2e;
+    color: white;
+}
+
+/* ===== RANGE SLIDER ===== */
+.range-container {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 12px;
+    align-items: center;
+}
+
+.tool-range {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    outline: none;
+}
+
+.tool-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tool-range::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
+.tool-range::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.tool-input-small {
+    width: 70px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    outline: none;
+}
+
+.range-symbol {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-left: -8px;
+}
+
+/* ===== BOTONES ===== */
+.tool-button {
+    width: 100%;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #30a003 0%, #154b00 100%);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.tool-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(30, 255, 0, 0.4);
+}
+
+.tool-button:active {
+    transform: translateY(0);
+}
+
+.btn-icon {
+    font-size: 18px;
+}
+
+/* ===== RESULTADOS - CONVERSOR DE MONEDA ===== */
+.tool-result {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: rgba(46, 213, 115, 0.15);
+    border: 2px solid rgba(46, 213, 115, 0.3);
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+.result-icon {
+    font-size: 36px;
+}
+
+.result-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.result-label {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.result-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: #2ed573;
+    transition: transform 0.3s ease;
+}
+
+.exchange-rate {
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.exchange-rate span {
+    font-weight: 600;
+    color: #667eea;
+}
+
+/* ===== RESULTADOS - CALCULADORA DE DESCUENTOS ===== */
+.discount-results {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+.discount-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.discount-item.final {
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+    padding-top: 16px;
+    margin-top: 8px;
+}
+
+.discount-label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.discount-value {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.discount-value.original {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.discount-value.savings {
+    color: #ff6b6b;
+}
+
+.discount-value.final-price {
+    font-size: 28px;
+    color: #2ed573;
+    transition: transform 0.3s ease;
+}
+
+.discount-badges {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.discount-badge,
+.savings-badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.discount-badge {
+    background: rgba(255, 107, 107, 0.2);
+    border: 1px solid rgba(255, 107, 107, 0.4);
+    color: #ff6b6b;
+}
+
+.savings-badge {
+    background: rgba(46, 213, 115, 0.2);
+    border: 1px solid rgba(46, 213, 115, 0.4);
+    color: #2ed573;
+}
+
+/* ===== RESULTADOS - COMPARADOR ===== */
+.comparison-results {
+    margin-top: 8px;
+}
+
+.comparison-item {
+    padding: 20px;
+    background: rgba(46, 213, 115, 0.15);
+    border: 2px solid rgba(46, 213, 115, 0.3);
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.comparison-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.store-name {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.best-badge {
+    padding: 4px 12px;
+    background: rgba(255, 215, 0, 0.3);
+    border: 1px solid rgba(255, 215, 0, 0.5);
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #ffd700;
+}
+
+.comparison-price {
+    font-size: 24px;
+    font-weight: 800;
+    color: #2ed573;
+    margin-bottom: 6px;
+}
+
+.comparison-savings {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.ranking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.rank {
+    font-size: 16px;
+    font-weight: 800;
+    color: #19d300;
+    min-width: 30px;
+}
+
+.rank-store {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.rank-price {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+    .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tools-title {
+        font-size: 32px;
+    }
+
+    .tool-card {
+        padding: 20px;
+    }
+
+    .range-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-input-small {
+        width: 100%;
+    }
+}

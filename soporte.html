@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub | Soporte</title>
+    <link rel="icon" href="img/Logotipos/Isotipo.jpg">
+    <link rel="stylesheet" href="css/comunidad.css">
+    <link rel="stylesheet" href="css/soporte.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- TOPBAR -->
+        <header class="topbar">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span>GameHub</span>
+            </div>
+            <div class="search-container">
+                <div class="search-icon"></div>
+                <input type="text" class="search-bar" placeholder="Search">
+            </div>
+            <div class="user-section">
+                <div class="notification-section">
+                    <div class="icon-btn">
+                        <div class="notification-badge"></div>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar"></div>
+                    <span class="username">Mancin</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li onclick="location.href='index.html'">
+                    <span>Inicio</span>
+                </li>
+                <li onclick="location.href='productos.html'">
+                    <span>Productos</span>
+                </li>
+                <li onclick="location.href='comunidad.html'">
+                    <span>Comunidad</span>
+                </li>
+                <li onclick="location.href='herramientas.html'">
+                    <span>Herramientas</span>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <ul>
+                    <li class="active">
+                        <span>Soporte</span>
+                    </li>
+                    <li onclick="location.href='nosotros.html'">
+                        <span>Nosotros</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL - SOPORTE -->
+        <main class="main-content">
+            <div class="support-container">
+
+                <!-- Hero Section -->
+                <section class="support-hero">
+                    <div class="hero-badge">
+                        <span class="badge-icon">🎧</span>
+                        <span class="badge-text">SOPORTE 24/7</span>
+                    </div>
+                    <h1 class="hero-title">Centro de Ayuda</h1>
+                    <p class="hero-subtitle">¿En qué podemos ayudarte hoy?</p>
+                    
+                    <!-- Buscador de ayuda -->
+                    <div class="support-search">
+                        <input type="text" id="supportSearchInput" class="support-search-input" placeholder="Buscar en preguntas frecuentes...">
+                        <button class="support-search-btn">
+                            <span>🔍</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="quick-stats">
+                        <div class="quick-stat">
+                            <span class="stat-icon">⚡</span>
+                            <span class="stat-text">Respuesta en <strong>menos de 2h</strong></span>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="stat-icon">✅</span>
+                            <span class="stat-text"><strong>98%</strong> de satisfacción</span>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="stat-icon">🌐</span>
+                            <span class="stat-text">Soporte en <strong>español</strong></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Métodos de Contacto Rápido -->
+                <section class="contact-methods">
+                    <h2 class="section-title">Contáctanos Ahora</h2>
+                    <div class="methods-grid">
+                        <div class="method-card priority">
+                            <div class="method-header">
+                                <div class="method-icon">💬</div>
+                                <div class="priority-badge">RECOMENDADO</div>
+                            </div>
+                            <h3 class="method-title">Chat en Vivo</h3>
+                            <p class="method-description">Habla con un agente en tiempo real. Respuesta inmediata.</p>
+                            <div class="method-info">
+                                <span class="info-label">⏱️ Tiempo de espera:</span>
+                                <span class="info-value">~30 segundos</span>
+                            </div>
+                            <button class="method-button active" id="openChatBtn">
+                                <span>Iniciar Chat</span>
+                                <span class="online-indicator"></span>
+                            </button>
+                        </div>
+
+                        <div class="method-card">
+                            <div class="method-header">
+                                <div class="method-icon">📧</div>
+                            </div>
+                            <h3 class="method-title">Email</h3>
+                            <p class="method-description">Envíanos un correo detallado con tu consulta o problema.</p>
+                            <div class="method-info">
+                                <span class="info-label">⏱️ Tiempo de respuesta:</span>
+                                <span class="info-value">~2 horas</span>
+                            </div>
+                            <button class="method-button" id="openEmailBtn">
+                                <span>Enviar Email</span>
+                            </button>
+                        </div>
+
+                        <div class="method-card">
+                            <div class="method-header">
+                                <div class="method-icon">📱</div>
+                            </div>
+                            <h3 class="method-title">WhatsApp</h3>
+                            <p class="method-description">Chatea con nosotros por WhatsApp. Disponible 24/7.</p>
+                            <div class="method-info">
+                                <span class="info-label">📞 Número:</span>
+                                <span class="info-value">+1 555-123-4567</span>
+                            </div>
+                            <button class="method-button" id="openWhatsAppBtn">
+                                <span>Abrir WhatsApp</span>
+                            </button>
+                        </div>
+
+                        <div class="method-card">
+                            <div class="method-header">
+                                <div class="method-icon">🎫</div>
+                            </div>
+                            <h3 class="method-title">Ticket de Soporte</h3>
+                            <p class="method-description">Crea un ticket para problemas técnicos complejos.</p>
+                            <div class="method-info">
+                                <span class="info-label">⏱️ Tiempo de respuesta:</span>
+                                <span class="info-value">~4 horas</span>
+                            </div>
+                            <button class="method-button" id="openTicketBtn">
+                                <span>Crear Ticket</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Preguntas Frecuentes -->
+                <section class="faq-section">
+                    <h2 class="section-title">Preguntas Frecuentes</h2>
+                    <p class="section-subtitle">Encuentra respuestas rápidas a las consultas más comunes</p>
+
+                    <div class="faq-categories">
+                        <button class="faq-category-btn active" data-category="all">Todas</button>
+                        <button class="faq-category-btn" data-category="compras">Compras</button>
+                        <button class="faq-category-btn" data-category="pagos">Pagos</button>
+                        <button class="faq-category-btn" data-category="entregas">Entregas</button>
+                        <button class="faq-category-btn" data-category="cuenta">Cuenta</button>
+                        <button class="faq-category-btn" data-category="tecnico">Técnico</button>
+                    </div>
+
+                    <div class="faq-list">
+                        <!-- Compras -->
+                        <div class="faq-item" data-category="compras">
+                            <div class="faq-question">
+                                <span class="faq-icon">🛒</span>
+                                <h3>¿Cómo puedo comprar un juego en GameHub?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Es muy sencillo: 1) Busca el juego que deseas, 2) Haz clic en "Comprar", 3) Selecciona tu método de pago, 4) Completa la transacción. Recibirás tu código de activación por email en menos de 2 minutos.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="compras">
+                            <div class="faq-question">
+                                <span class="faq-icon">🎮</span>
+                                <h3>¿Los juegos son originales y legales?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Sí, absolutamente. Trabajamos únicamente con distribuidores autorizados y oficiales. Todos nuestros productos son 100% originales y legales. Cada código proviene directamente de publishers verificados.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pagos -->
+                        <div class="faq-item" data-category="pagos">
+                            <div class="faq-question">
+                                <span class="faq-icon">💳</span>
+                                <h3>¿Qué métodos de pago aceptan?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Aceptamos: tarjetas de crédito/débito (Visa, Mastercard, American Express), PayPal, Mercado Pago, transferencias bancarias, y pagos en efectivo en puntos autorizados. Todos los pagos son procesados de forma segura con encriptación SSL.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="pagos">
+                            <div class="faq-question">
+                                <span class="faq-icon">🔒</span>
+                                <h3>¿Es seguro comprar en GameHub?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Completamente seguro. Utilizamos encriptación SSL de 256 bits, cumplimos con PCI DSS, y nunca almacenamos información de tarjetas. Además, ofrecemos garantía de devolución si algo no funciona correctamente.</p>
+                            </div>
+                        </div>
+
+                        <!-- Entregas -->
+                        <div class="faq-item" data-category="entregas">
+                            <div class="faq-question">
+                                <span class="faq-icon">⚡</span>
+                                <h3>¿Cuánto tarda en llegar mi código?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>En el 95% de los casos, tu código llega de forma instantánea (menos de 2 minutos). En casos excepcionales puede tomar hasta 24 horas. Si no recibes tu código en ese tiempo, contáctanos inmediatamente para resolverlo.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="entregas">
+                            <div class="faq-question">
+                                <span class="faq-icon">📧</span>
+                                <h3>No recibí mi código, ¿qué hago?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Primero verifica tu carpeta de spam/correo no deseado. Si no está ahí, inicia sesión en tu cuenta GameHub y ve a "Mis Pedidos" - el código estará disponible ahí. Si aún no lo ves, contáctanos por chat en vivo y lo resolveremos de inmediato.</p>
+                            </div>
+                        </div>
+
+                        <!-- Cuenta -->
+                        <div class="faq-item" data-category="cuenta">
+                            <div class="faq-question">
+                                <span class="faq-icon">👤</span>
+                                <h3>¿Necesito crear una cuenta para comprar?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Sí, necesitas una cuenta para realizar compras. Es gratis, rápido (toma menos de 1 minuto), y te permite ver tu historial de pedidos, recibir ofertas exclusivas, y guardar tu lista de deseos.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="cuenta">
+                            <div class="faq-question">
+                                <span class="faq-icon">🔑</span>
+                                <h3>Olvidé mi contraseña, ¿cómo la recupero?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Haz clic en "Olvidé mi contraseña" en la página de inicio de sesión. Te enviaremos un enlace de recuperación a tu email registrado. El enlace es válido por 24 horas y te permitirá crear una nueva contraseña de forma segura.</p>
+                            </div>
+                        </div>
+
+                        <!-- Técnico -->
+                        <div class="faq-item" data-category="tecnico">
+                            <div class="faq-question">
+                                <span class="faq-icon">❌</span>
+                                <h3>Mi código no funciona, ¿qué hago?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Primero verifica que: 1) Estás usando el código en la plataforma correcta (Steam, Epic, etc.), 2) No tiene errores de tipeo, 3) El juego está disponible en tu región. Si todo está correcto y aún falla, contáctanos con una captura del error y te enviaremos un reemplazo inmediato.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tecnico">
+                            <div class="faq-question">
+                                <span class="faq-icon">🌍</span>
+                                <h3>¿Los juegos tienen restricción regional?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Algunos juegos sí tienen restricciones regionales. Siempre indicamos claramente en la página del producto si hay restricciones. La mayoría de nuestros códigos son globales y funcionan en cualquier país de Latinoamérica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Guías y Tutoriales -->
+                <section class="guides-section">
+                    <h2 class="section-title">Guías y Tutoriales</h2>
+                    <div class="guides-grid">
+                        <div class="guide-card">
+                            <div class="guide-icon">🎯</div>
+                            <h3 class="guide-title">Cómo Activar en Steam</h3>
+                            <p class="guide-description">Tutorial paso a paso para activar tus códigos en Steam.</p>
+                            <button class="guide-button">Ver Guía</button>
+                        </div>
+
+                        <div class="guide-card">
+                            <div class="guide-icon">🎮</div>
+                            <h3 class="guide-title">Activar en Epic Games</h3>
+                            <p class="guide-description">Aprende a canjear códigos en Epic Games Store.</p>
+                            <button class="guide-button">Ver Guía</button>
+                        </div>
+
+                        <div class="guide-card">
+                            <div class="guide-icon">🔐</div>
+                            <h3 class="guide-title">Seguridad de Cuenta</h3>
+                            <p class="guide-description">Protege tu cuenta con autenticación de dos factores.</p>
+                            <button class="guide-button">Ver Guía</button>
+                        </div>
+
+                        <div class="guide-card">
+                            <div class="guide-icon">💰</div>
+                            <h3 class="guide-title">Programa de Reembolsos</h3>
+                            <p class="guide-description">Conoce nuestra política de devoluciones y reembolsos.</p>
+                            <button class="guide-button">Ver Guía</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Estado del Servicio -->
+                <section class="status-section">
+                    <h2 class="section-title">Estado del Servicio</h2>
+                    <div class="status-grid">
+                        <div class="status-item operational">
+                            <div class="status-dot"></div>
+                            <div class="status-info">
+                                <h3>Plataforma Web</h3>
+                                <span class="status-label">Operativo</span>
+                            </div>
+                        </div>
+
+                        <div class="status-item operational">
+                            <div class="status-dot"></div>
+                            <div class="status-info">
+                                <h3>Sistema de Pagos</h3>
+                                <span class="status-label">Operativo</span>
+                            </div>
+                        </div>
+
+                        <div class="status-item operational">
+                            <div class="status-dot"></div>
+                            <div class="status-info">
+                                <h3>Entrega de Códigos</h3>
+                                <span class="status-label">Operativo</span>
+                            </div>
+                        </div>
+
+                        <div class="status-item operational">
+                            <div class="status-dot"></div>
+                            <div class="status-info">
+                                <h3>Soporte al Cliente</h3>
+                                <span class="status-label">Operativo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="status-note">Última actualización: <span id="statusTime">hace 2 minutos</span></p>
+                </section>
+
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="gh-footer" role="contentinfo">
+                <div class="gh-footer-inner">
+                    <div class="gh-footer-brand">
+                        <img src="img/Logotipos/IsotipoGlass.png" alt="GameHub" class="gh-footer-logo">
+                        <div class="gh-footer-title">
+                            <span class="gh-site-name">GameHub</span>
+                            <small class="gh-tagline">Tu centro de juegos</small>
+                        </div>
+                    </div>
+
+                    <nav class="gh-footer-social" aria-label="Enlaces a redes sociales">
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+                            class="gh-social-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M22 5.92c-.66.29-1.37.49-2.11.58.76-.45 1.34-1.17 1.61-2.03-.71.42-1.5.72-2.34.89A3.64 3.64 0 0 0 16.15 4c-2.02 0-3.66 1.64-3.66 3.66 0 .29.03.57.1.84C9.58 8.35 6.7 6.6 4.86 3.9c-.32.55-.5 1.18-.5 1.85 0 1.28.65 2.41 1.64 3.07-.6-.02-1.17-.18-1.66-.46v.05c0 1.79 1.27 3.28 2.95 3.62-.31.08-.63.12-.97.12-.24 0-.48-.02-.71-.07.48 1.48 1.88 2.56 3.53 2.59A7.32 7.32 0 0 1 2 19.14 10.32 10.32 0 0 0 7.03 21c6.29 0 9.73-5.21 9.73-9.72v-.44c.67-.48 1.25-1.08 1.71-1.77-.62.28-1.28.47-1.96.56z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram" class="gh-social-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A4.8 4.8 0 1 0 16.8 13 4.8 4.8 0 0 0 12 8.2zm6.4-3.1a1.12 1.12 0 1 0 1.12 1.12A1.12 1.12 0 0 0 18.4 5.1zM12 10.6A1.4 1.4 0 1 1 10.6 12 1.4 1.4 0 0 1 12 10.6z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube" class="gh-social-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M23 7.2s-.2-1.6-.8-2.3c-.8-.9-1.7-.9-2.1-1C16.6 3.6 12 3.6 12 3.6s-4.6 0-7.9.3c-.4 0-1.3 0-2.1 1C1.2 5.6 1 7.2 1 7.2S.9 9 .9 10.8v2.4C.9 15 1 16.8 1 16.8s.2 1.6.8 2.3c.8.9 1.8.9 2.3 1 1.7.2 7.1.3 7.1.3s4.6 0 7.9-.3c.4 0 1.3 0 2.1-1 .6-.7.8-2.3.8-2.3s.1-1.9.1-3.6v-2.4C23.1 9 23 7.2 23 7.2zM9.8 15.6V8.4l6.3 3.6-6.3 3.6z" />
+                            </svg>
+                        </a>
+                        <a href="https://discord.com/" target="_blank" rel="noopener noreferrer" aria-label="Discord"
+                            class="gh-social-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M20.317 4.369A19.791 19.791 0 0 0 16.795 3c-.17.29-.362.665-.497.96-1.53-.23-3.047-.23-4.57 0-.135-.297-.327-.67-.497-.96A19.736 19.736 0 0 0 3.683 4.37C1.52 9.11.856 13.66 1.5 18.09 4.06 19.9 6.542 20.6 9.06 20.98c.23-.31.44-.63.63-.97-1.88-.56-3.64-1.46-5.06-2.66 0 0 .43-.27.81-.5 1.61.7 3.29 1.12 4.96 1.36.55-.74 1.02-1.53 1.39-2.33 0 0 2.88 2.1 7.9 2.1.64 0 1.28-.03 1.91-.08.67-.06 1.34-.14 2-.24.6-4.46-.5-8.99-2.77-13.52zM8.02 13.5c-.97 0-1.77-.87-1.77-1.94 0-1.08.78-1.95 1.77-1.95.99 0 1.79.88 1.77 1.95 0 1.07-.78 1.94-1.77 1.94zm7.96 0c-.97 0-1.77-.87-1.77-1.94 0-1.08.78-1.95 1.77-1.95.99 0 1.79.88 1.77 1.95 0 1.07-.78 1.94-1.77 1.94z" />
+                            </svg>
+                        </a>
+                    </nav>
+
+                    <div class="gh-footer-rights">
+                        <small>© <span id="ghFooterYear">2024</span> <span id="ghFooterOwner">GameHub</span>. Todos los
+                            derechos reservados.</small>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Overlay de notificaciones -->
+    <div class="gh-notify-overlay-bg" id="ghNotifyOverlay"></div>
+
+    <!-- Panel de notificaciones -->
+    <div class="gh-notifications-drawer" id="ghNotifyDrawer">
+        <div class="gh-drawer-header">
+            <h2 class="gh-drawer-heading">Notificaciones</h2>
+            <button class="gh-close-drawer" id="ghCloseBtn">×</button>
+        </div>
+
+        <div class="gh-notify-scroll-area" id="ghNotifyList">
+            <div class="gh-notify-card gh-unread" data-gh-id="n1">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">¡Nuevo descuento disponible!</div>
+                    <div class="gh-notify-text">Un juego de tu lista de deseos acaba de recibir un 30% de descuento.
+                    </div>
+                    <div class="gh-notify-timestamp">Hace 5 minutos</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n1">×</button>
+            </div>
+
+            <div class="gh-notify-card" data-gh-id="n2">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">Nuevos títulos agregados</div>
+                    <div class="gh-notify-text">Se han añadido estrenos recientes a la tienda. ¡No te los pierdas!
+                    </div>
+                    <div class="gh-notify-timestamp">Hace 1 hora</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n2">×</button>
+            </div>
+
+            <div class="gh-notify-card gh-unread" data-gh-id="n3">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">¡Lanzamiento imperdible!</div>
+                    <div class="gh-notify-text">"GTA VI" ya está disponible para reserva. ¡Asegura tu copia ahora!</div>
+                    <div class="gh-notify-timestamp">Hace 2 horas</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n3">×</button>
+            </div>
+
+            <div class="gh-notify-card" data-gh-id="n4">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">Reporte semanal de jugador</div>
+                    <div class="gh-notify-text">Aquí tienes tus juegos más jugados y nuevas recomendaciones
+                        personalizadas.</div>
+                    <div class="gh-notify-timestamp">Hoy, 09:18 am</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n4">×</button>
+            </div>
+
+            <div class="gh-notify-card" data-gh-id="n5">
+                <div class="gh-notify-body">
+                    <div class="gh-notify-headline">Compra confirmada</div>
+                    <div class="gh-notify-text">Tu pedido de "Elden Ring II" fue procesado exitosamente.</div>
+                    <div class="gh-notify-timestamp">Ayer</div>
+                </div>
+                <button class="gh-remove-btn" data-gh-remove="n5">×</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
+    <script src="/js/soporte.js"></script>
+    </body>
+    </html>
